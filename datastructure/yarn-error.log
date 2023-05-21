@@ -1,0 +1,38 @@
+Arguments: 
+  /Users/ankurpradhan/.nvm/versions/node/v16.14.2/bin/node /usr/local/bin/yarn add -D jest
+
+PATH: 
+  /Users/ankurpradhan/.nvm/versions/node/v16.14.2/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ankurpradhan/anaconda3/bin:/Users/ankurpradhan/anaconda3/condabin:/Users/ankurpradhan/.nvm/versions/node/v16.14.2/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/ankurpradhan/.rover/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "datastructure",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
