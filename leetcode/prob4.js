@@ -3,20 +3,15 @@
  * @return {Function}
  */
 const curry = function (fn) {
+  let finalargs = [];
   return function curryFn(...args) {
-    if (args.length >= fn.length) {
-      return fn.apply(this, args);
+    finalargs.push(...args);
+    console.log("finalargs--", ...finalargs);
+    if (finalargs.length >= fn.length) {
+      return fn(...finalargs);
     } else {
-      return function (...args2) {
-        return curry.apply(this, args.concat(args2));
-      };
+      console.log("else", ...args);
+      return curryFn;
     }
   };
 };
-
-function sum(a, b) {
-  return a + b;
-}
-const csum = curry(sum);
-// csum(1)(2); // 3
-console.log(csum(1)(2));
